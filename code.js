@@ -12,11 +12,11 @@ let heroes = {
 // DESTRUCTURING AN OBJECT
 
 // Option A
-let batman = heroes.batman;
-let superman = heroes.superman;
+// let batman = heroes.batman;
+// let superman = heroes.superman;
 
 // Option B - destructure an object
-// let { batman, superman, flash } = heroes;
+let { batman, superman } = heroes;
 
 // Console Log the Results
 console.log(batman);
@@ -42,11 +42,11 @@ let animals = [
 // let whiskers = animals[1];
 
 // Option B - destructure an array
-// let [fido, whiskers] = animals;
+let [fido, whiskers] = animals;
 
 // Console Log the Results
-// console.log(fido);
-// console.log(whiskers);
+console.log(fido);
+console.log(whiskers);
 
 ///////////////////////////////////////////////
 
@@ -59,14 +59,14 @@ let animals = [
 // }
 
 // Option B - rest operator
-// function addNumbers(...numbers) {
-//   let sum = 0;
-//   numbers.forEach((n) => (sum += n));
-//   return sum;
-// }
+function addNumbers(...numbers) {
+  let sum = 0;
+  numbers.forEach((n) => (sum += n));
+  return sum;
+}
 
-// let total = addNumbers(10, 15, 5, 100, 5000, -110, -20);
-// console.log(total);
+let total = addNumbers(10, 15, 5, 100, 5000, -110, -20, 9, 66, -999); // only sums a - h with option A, but you can add more parameters with the rest operator in option B.
+console.log(total);
 
 ///////////////////////////////////////////////
 
@@ -79,6 +79,6 @@ let customers = ["Melissa", "Rohan", "Amna"];
 // let allUsers = [admins[0], admins[1], admins[2], customers[0], customers[1], customers[2]];
 
 // Option B - spread operator
-// let allUsers = [...admins, ...customers];
+let allUsers = [...admins, ...customers];
 
-// console.log(allUsers);
+console.log(allUsers);

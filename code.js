@@ -67,3 +67,17 @@ let animals = [
 
 // let total = addNumbers(10, 15, 5, 100, 5000, -110, -20);
 // console.log(total);
+
+///////////////////////////////////////////////
+
+/// SPREAD OPERATOR
+
+let admins = ["Abed", "Eli", "Niketta"];
+let customers = ["Melissa", "Rohan", "Amna"];
+
+// Option A
+let allUsers = [admins[0], admins[1], admins[2], customers[0], customers[1], customers[2]];
+console.log(allUsers);
+
+// Option B - spread operator
+// let allUsers = [...admins, ...customers];

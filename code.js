@@ -76,8 +76,9 @@ let admins = ["Abed", "Eli", "Niketta"];
 let customers = ["Melissa", "Rohan", "Amna"];
 
 // Option A
-let allUsers = [admins[0], admins[1], admins[2], customers[0], customers[1], customers[2]];
-console.log(allUsers);
+// let allUsers = [admins[0], admins[1], admins[2], customers[0], customers[1], customers[2]];
 
 // Option B - spread operator
 // let allUsers = [...admins, ...customers];
+
+// console.log(allUsers);
